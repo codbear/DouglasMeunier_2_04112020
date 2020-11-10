@@ -54,6 +54,14 @@ a:active, a:hover {
     flex-direction: column;
 }
 
+#site-description {
+    margin-bottom: var(--spacing);
+}
+
+#site-sub-description {
+    margin-top: 0;
+}
+
 /** Search bar **/
 #search-bar {
     width: 35%;
