@@ -11,6 +11,7 @@
     --spacing: 8px;
     --spacing-2: 16px;
     --spacing-3: 32px;
+    --filters-item-height: 40px;
 }
 
 body {
@@ -155,7 +156,7 @@ a:active, a:hover {
 
 .filters-item {
     display: flex;
-    height: 40px;
+    height: var(--filters-item-height);
     margin: var(--spacing);
     padding: 0 var(--spacing-2) 0 0;
     border: solid 2px var(--light-border-color);
@@ -175,9 +176,9 @@ a:active, a:hover {
     position: relative;
     top: -2px;
     left: -2px;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
+    width: var(--filters-item-height);
+    height: var(--filters-item-height);
+    line-height: var(--filters-item-height);
     margin-right: var(--spacing);
     border-radius: var(--circle-border-radius);
     background-color: var(--secondary-color);
