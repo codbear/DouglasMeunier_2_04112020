@@ -49,7 +49,7 @@ a:active, a:hover {
 
 /** App content **/
 #app-content {
-    padding: 1%;
+    padding: var(--spacing);
     display: flex;
     flex-direction: column;
 }
@@ -67,15 +67,11 @@ a:active, a:hover {
     width: 35%;
     display: flex;
     flex-flow: row nowrap;
-    --padding: 2.5% 1%;
 }
 
 #search-bar-icon {
-    flex: 1;
-    max-width: 50px;
-    min-width: 30px;
+    width: 50px;
     display: flex;
-    padding: var(--padding);
     background-color: var(--contrast-background-color);
     border-top-left-radius: var(--soft-border-radius);
     border-bottom-left-radius: var(--soft-border-radius);
@@ -88,8 +84,7 @@ a:active, a:hover {
 #search-bar-input {
     flex: 2;
     border: 1px solid var(--light-border-color);
-    padding: var(--padding);
-    padding-left: 3%;
+    padding-left: var(--spacing-2);
     font-weight: bold;
 }
 
@@ -101,7 +96,7 @@ a:active, a:hover {
     border: none;
     border-top-right-radius: var(--soft-border-radius);
     border-bottom-right-radius: var(--soft-border-radius);
-    padding: var(--padding);
+    padding: var(--spacing-2) var(--spacing);
     cursor: pointer;
 }
 
