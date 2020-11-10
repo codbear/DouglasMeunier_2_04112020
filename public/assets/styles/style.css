@@ -46,16 +46,21 @@ a:active, a:hover {
 /** App content **/
 #app-content {
     padding: 1%;
+    display: flex;
+    flex-direction: column;
 }
 
 /** Search bar **/
 #search-bar {
+    width: 35%;
     display: flex;
     flex-flow: row nowrap;
-    --padding: 0.6% 1%;
+    --padding: 2% 1%;
 }
 
 #search-bar-icon {
+    flex: 1;
+    max-width: 40px;
     display: flex;
     padding: var(--padding);
     background-color: var(--contrast-background-color);
@@ -68,16 +73,32 @@ a:active, a:hover {
 }
 
 #search-bar-input {
+    flex: 2;
     border: 1px solid #F2F2F2;
     padding: var(--padding);
+    padding-left: 3%;
     font-weight: bold;
 }
 
 #search-bar-button {
+    flex: 1;
+    max-width: 120px;
     background-color: var(--primary-color);
     color: var(--secondary-text-color);
     border: none;
     border-top-right-radius: var(--soft-border-radius);
     border-bottom-right-radius: var(--soft-border-radius);
     padding: var(--padding);
+    cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+    #search-bar {
+        margin: auto;
+        width: 70%;
+    }
+
+    #search-bar-icon {
+        max-width: 50px;
+    }
 }
