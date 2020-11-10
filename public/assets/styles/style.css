@@ -12,6 +12,8 @@
     --spacing-2: 16px;
     --spacing-3: 32px;
     --filters-item-height: 40px;
+    --empty-star-color: #F2F2F2;
+    --full-star-color: #0065FC
 }
 
 body {
@@ -24,9 +26,10 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-h1, h2, h3 a {
+h1, h2, h3, a {
     font-weight: bold;
     color: var(--primary-text-color);
+    text-decoration: none;
 }
 
 a:active, a:hover {
@@ -199,3 +202,18 @@ a:active, a:hover {
 .fa-info-circle {
     color: var(--primary-color);
 }
+
+/** Cards deck **/
+.cards-deck {
+    border-radius: 25px;
+    padding: var(--spacing-3);
+}
+
+.lodgings-deck {
+    background-color: var(--contrast-background-color);
+}
+
+#lodgings-collection {
+    width: 70%;
+}
+
