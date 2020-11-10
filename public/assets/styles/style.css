@@ -19,9 +19,14 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-h1, h2, h3, a {
+h1, h2, a {
     font-weight: bold;
     color: var(--primary-text-color);
+}
+
+h3 {
+    margin-top: 0;
+    font-weight: normal;
 }
 
 a:active, a:hover {
