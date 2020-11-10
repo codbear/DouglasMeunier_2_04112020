@@ -5,7 +5,7 @@
     --contrast-background-color: #F2F2F2;
     --primary-text-color: #000000;
     --secondary-text-color: #FFFFFF;
-    --soft-border-radius: 25px;
+    --soft-border-radius: 11px;
     --circle-border-radius: 50%;
 }
 
@@ -41,4 +41,43 @@ a:active, a:hover {
 #brand-logo {
     margin: 0;
     max-height: 100%;
+}
+
+/** App content **/
+#app-content {
+    padding: 1%;
+}
+
+/** Search bar **/
+#search-bar {
+    display: flex;
+    flex-flow: row nowrap;
+    --padding: 0.6% 1%;
+}
+
+#search-bar-icon {
+    display: flex;
+    padding: var(--padding);
+    background-color: var(--contrast-background-color);
+    border-top-left-radius: var(--soft-border-radius);
+    border-bottom-left-radius: var(--soft-border-radius);
+}
+
+#search-bar-icon i {
+    margin: auto;
+}
+
+#search-bar-input {
+    border: 1px solid #F2F2F2;
+    padding: var(--padding);
+    font-weight: bold;
+}
+
+#search-bar-button {
+    background-color: var(--primary-color);
+    color: var(--secondary-text-color);
+    border: none;
+    border-top-right-radius: var(--soft-border-radius);
+    border-bottom-right-radius: var(--soft-border-radius);
+    padding: var(--padding);
 }
