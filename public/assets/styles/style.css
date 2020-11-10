@@ -1,0 +1,44 @@
+:root {
+    --primary-color: #0065FC;
+    --secondary-color: #DEEBFF;
+    --main-background-color: #FFFFFF;
+    --contrast-background-color: #F2F2F2;
+    --primary-text-color: #000000;
+    --secondary-text-color: #FFFFFF;
+    --soft-border-radius: 25px;
+    --circle-border-radius: 50%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1, h2, h3, a {
+    font-weight: bold;
+    color: var(--primary-text-color);
+}
+
+a:active, a:hover {
+    color: var(--primary-color);
+}
+
+/** App bar **/
+#app-bar {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    height: 80px;
+    padding: 1%;
+}
+
+#brand-logo {
+    margin: 0;
+    max-height: 100%;
+}
