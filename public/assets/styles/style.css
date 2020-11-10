@@ -5,8 +5,12 @@
     --contrast-background-color: #F2F2F2;
     --primary-text-color: #000000;
     --secondary-text-color: #FFFFFF;
+    --light-border-color: #F2F2F2;
     --soft-border-radius: 11px;
     --circle-border-radius: 50%;
+    --spacing: 8px;
+    --spacing-2: 16px;
+    --spacing-3: 32px;
 }
 
 body {
@@ -19,14 +23,9 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-h1, h2, a {
+h1, h2, h3 a {
     font-weight: bold;
     color: var(--primary-text-color);
-}
-
-h3 {
-    margin-top: 0;
-    font-weight: normal;
 }
 
 a:active, a:hover {
@@ -80,7 +79,7 @@ a:active, a:hover {
 
 #search-bar-input {
     flex: 2;
-    border: 1px solid #F2F2F2;
+    border: 1px solid var(--light-border-color);
     padding: var(--padding);
     padding-left: 3%;
     font-weight: bold;
@@ -109,6 +108,46 @@ a:active, a:hover {
     #search-bar {
         width: 90%;
     }
+}
+
+/** Filters bar **/
+#filters-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#filters-collection {
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+}
+
+.filters-item {
+    background-color: var(--main-background-color);
+    border: solid 3px var(--light-border-color);
+    border-left: none;
+    border-radius: 25px;
+    margin-right: var(--spacing-2);
+    padding: 0 var(--spacing-2) 0 0;
+    cursor: pointer;
+}
+
+.filters-item-icon {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: var(--circle-border-radius);
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin-right: var(--spacing);
+}
+
+.filters-item-label {
+    margin: auto;
+    font-weight: bold;
 }
 
 .fa-info-circle {
