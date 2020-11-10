@@ -261,3 +261,27 @@ a:active, a:hover {
 .lodging-price {
     font-weight: bold;
 }
+
+.rating-star {
+    color: var(--empty-star-color);
+}
+
+.lodging-rating-1 .rating-star:nth-child(-n+1) {
+    color: var(--full-star-color);
+}
+
+.lodging-rating-2 .rating-star:nth-child(-n+2) {
+    color: var(--full-star-color);
+}
+
+.lodging-rating-3 .rating-star:nth-child(-n+3) {
+    color: var(--full-star-color);
+}
+
+.lodging-rating-4 .rating-star:nth-child(-n+4) {
+    color: var(--full-star-color);
+}
+
+.lodging-rating-5 .rating-star:nth-child(-n+5) {
+    color: var(--full-star-color);
+}
