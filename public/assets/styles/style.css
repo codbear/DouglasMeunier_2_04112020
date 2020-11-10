@@ -53,7 +53,7 @@ a:active, a:hover {
 
 /** App content **/
 #app-content {
-    padding: var(--spacing);
+    padding: var(--spacing-3);
     display: flex;
     flex-direction: column;
 }
@@ -204,50 +204,86 @@ a:active, a:hover {
 }
 
 /** Cards deck **/
-.cards-deck {
-    border-radius: 25px;
+#lodgings {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-template-rows: auto;
+    column-gap: var(--spacing-3);
+}
+
+.lodgings-collection {
     padding: var(--spacing-3);
-}
-
-.cards-collection {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-}
-
-.lodgings-deck {
+    border-radius: 25px;
     background-color: var(--contrast-background-color);
 }
 
-#lodgings-collection {
-    width: 70%;
+#all-lodgings {
+    grid-column: 1;
+}
+
+#featured-lodgings {
+    grid-column: 2;
+}
+
+#featured-lodgings-icon {
+    float: right;
+}
+
+.cards-collection-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+    gap: var(--spacing-2) var(--spacing-3);
+}
+
+.cards-collection-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    gap: var(--spacing-2);
 }
 
 /** Lodging card **/
 .card {
     display: flex;
     flex-direction: column;
-    width: 280px;
+    width: 100%;
     background-color: var(--main-background-color);
     border-radius: var(--soft-border-radius);
     margin-bottom: var(--spacing-3);
     padding: var(--spacing);
 }
 
+.cards-collection-list .card {
+    flex-direction: row;
+}
+
 .card-image {
     width: 100%;
-    height: 140px;
-    overflow: hidden;
+    height: 160px;
+    object-fit: cover;
+    object-position: center center;
     border-top-left-radius: var(--soft-border-radius);
     border-top-right-radius: var(--soft-border-radius);
 }
 
-.card-image img {
-    width: 100%;
+.cards-collection-list .card-image {
+    width: 30%;
+    height: 140px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: var(--soft-border-radius);
 }
 
 .card-content {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
     margin: 0 var(--spacing);
+}
+
+.cards-collection-list .card-content {
+    margin-bottom: var(--spacing);
+    width: 60%;
 }
 
 .card-title {
@@ -260,6 +296,12 @@ a:active, a:hover {
 
 .lodging-price {
     font-weight: bold;
+}
+
+.lodging-rating {
+    flex: 2;
+    display: flex;
+    align-items: flex-end;
 }
 
 .rating-star {
