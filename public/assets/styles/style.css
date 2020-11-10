@@ -55,12 +55,13 @@ a:active, a:hover {
     width: 35%;
     display: flex;
     flex-flow: row nowrap;
-    --padding: 2% 1%;
+    --padding: 2.5% 1%;
 }
 
 #search-bar-icon {
     flex: 1;
-    max-width: 40px;
+    max-width: 50px;
+    min-width: 30px;
     display: flex;
     padding: var(--padding);
     background-color: var(--contrast-background-color);
@@ -97,8 +98,10 @@ a:active, a:hover {
         margin: auto;
         width: 70%;
     }
+}
 
-    #search-bar-icon {
-        max-width: 50px;
+@media (max-width: 576px) {
+    #search-bar {
+        width: 90%;
     }
 }
