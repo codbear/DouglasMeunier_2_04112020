@@ -58,6 +58,16 @@ a:active, a:hover {
     flex-direction: column;
 }
 
+@media (max-width:576px) {
+    #app-content {
+        padding: 0;
+    }
+
+    #search-engine-wrapper {
+        padding: var(--spacing-3);
+    }
+}
+
 #site-description {
     margin-bottom: var(--spacing);
 }
@@ -212,6 +222,8 @@ a:active, a:hover {
 }
 
 .lodgings-collection {
+    display: flex;
+    flex-direction: column;
     padding: var(--spacing-3);
     border-radius: 25px;
     background-color: var(--contrast-background-color);
@@ -219,6 +231,10 @@ a:active, a:hover {
 
 #all-lodgings {
     grid-column: 1;
+}
+
+#expand-more {
+    margin-top: var(--spacing-3);
 }
 
 #featured-lodgings {
@@ -243,6 +259,61 @@ a:active, a:hover {
     gap: var(--spacing-2);
 }
 
+@media (max-width: 1200px) {
+    #lodgings {
+        grid-template-columns: 1fr;
+        row-gap: var(--spacing-2);
+    }
+
+    #all-lodgings {
+        grid-column: 1;
+        grid-row: 2;
+        background-color: var(--main-background-color);
+    }
+
+    #featured-lodgings {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .cards-collection-list {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 992px) {
+    .cards-collection-list {
+        grid-template-columns: auto 80% auto;
+        gap: var(--spacing-2);
+    }
+
+    .cards-collection-gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cards-collection-list .card {
+        grid-column: 2;
+    }
+}
+
+@media (max-width: 576px) {
+    #featured-lodgings {
+        border-radius: 0;
+    }
+
+    .cards-collection-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .cards-collection-list {
+        grid-template-columns: 1fr;
+    }
+
+    .cards-collection-list .card {
+        grid-column: 1;
+    }
+}
+
 /** Lodging card **/
 .card {
     display: flex;
@@ -250,7 +321,6 @@ a:active, a:hover {
     width: 100%;
     background-color: var(--main-background-color);
     border-radius: var(--soft-border-radius);
-    margin-bottom: var(--spacing-3);
     padding: var(--spacing);
 }
 

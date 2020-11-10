@@ -13,50 +13,52 @@
         <img id="brand-logo" src="assets/img/Reservia@3x.png" alt="Reservia">
     </header>
     <main id="app-content">
-        <h2 id="site-description">Trouvez votre hébergement pour des vacances de rêves</h2>
-        <p id="site-sub-description">En plein centre-ville ou en pleine nature</p>
-        <div id="search-bar">
-            <div id="search-bar-icon">
-                <i class="fas fa-map-marker-alt"></i>
+        <section id="search-engine-wrapper">
+            <h2 id="site-description">Trouvez votre hébergement pour des vacances de rêves</h2>
+            <p id="site-sub-description">En plein centre-ville ou en pleine nature</p>
+            <div id="search-bar">
+                <div id="search-bar-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <input id="search-bar-input" type="text" value="Marseille, France">
+                <button id="search-bar-button">
+                    <span id="search-bar-button-label">Rechercher</span>
+                    <span id="search-bar-button-label-mobile"><i class="fas fa-search"></i></span>
+                </button>
             </div>
-            <input id="search-bar-input" type="text" value="Marseille, France">
-            <button id="search-bar-button">
-                <span id="search-bar-button-label">Rechercher</span>
-                <span id="search-bar-button-label-mobile"><i class="fas fa-search"></i></span>
-            </button>
-        </div>
-        <div id="filters-bar">
-            <h3 id="filters-bar-title">Filtres</h3>
-            <ul id="filters-collection">
-                <li>
-                    <button class="filters-item">
-                        <span class="filters-item-icon"><i class="fas fa-money-bill-wave"></i></span>
-                        <span class="filters-item-label">Économique</span>
-                    </button>
-                </li>
-                <li>
-                    <button class="filters-item">
-                        <span class="filters-item-icon"><i class="fas fa-child"></i></span>
-                        <span class="filters-item-label">Familial</span>
-                    </button>
-                </li>
-                <li>
-                    <button class="filters-item">
-                        <span class="filters-item-icon"><i class="fas fa-heart"></i></span>
-                        <span class="filters-item-label">Romantique</span>
-                    </button>
-                </li>
-                <li>
-                    <button class="filters-item">
-                        <span class="filters-item-icon"><i class="fas fa-dog"></i></span>
-                        <span class="filters-item-label">Animaux autorisés</span>
-                    </button>
-                </li>
-            </ul>
-        </div>
-        <p>
-            <i class="fas fa-info-circle"></i> Plus de 500 logements sont disponibles dans cette ville
-        </p>
+            <div id="filters-bar">
+                <h3 id="filters-bar-title">Filtres</h3>
+                <ul id="filters-collection">
+                    <li>
+                        <button class="filters-item">
+                            <span class="filters-item-icon"><i class="fas fa-money-bill-wave"></i></span>
+                            <span class="filters-item-label">Économique</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="filters-item">
+                            <span class="filters-item-icon"><i class="fas fa-child"></i></span>
+                            <span class="filters-item-label">Familial</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="filters-item">
+                            <span class="filters-item-icon"><i class="fas fa-heart"></i></span>
+                            <span class="filters-item-label">Romantique</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="filters-item">
+                            <span class="filters-item-icon"><i class="fas fa-dog"></i></span>
+                            <span class="filters-item-label">Animaux autorisés</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <p>
+                <i class="fas fa-info-circle"></i> Plus de 500 logements sont disponibles dans cette ville
+            </p>
+        </section>
         <section id="lodgings">
             <section id="all-lodgings" class="lodgings-collection">
                 <h2>Hébergements à Marseille</h2>
@@ -170,7 +172,7 @@
                         </div>
                     </article>
                 </div>
-                <a href="#">Afficher plus</a>
+                <a id="expand-more" href="#all-lodgings">Afficher plus</a>
             </section>
             <aside id="featured-lodgings" class="lodgings-collection">
                 <h2>Les plus populaires <i id="featured-lodgings-icon" class="fas fa-chart-line"></i></h2>
