@@ -138,14 +138,19 @@ a:active, a:hover {
 /** Filters bar **/
 #filters-bar {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     align-items: center;
+}
+
+#filters-bar-title {
+    margin-right: var(--spacing-3);
 }
 
 #filters-collection {
     display: flex;
+    flex-flow: row wrap;
     list-style-type: none;
-    width: 100%;
+    padding: 0;
 }
 
 .filters-item {
@@ -153,7 +158,7 @@ a:active, a:hover {
     border: solid 3px var(--light-border-color);
     border-left: none;
     border-radius: 25px;
-    margin-right: var(--spacing-2);
+    margin: var(--spacing);
     padding: 0 var(--spacing-2) 0 0;
     cursor: pointer;
 }
