@@ -35,7 +35,7 @@ h1, h2, h3, a {
     text-decoration: none;
 }
 
-a:active, a:hover {
+a:active, a:hover, a:focus {
     color: var(--primary-color);
 }
 
@@ -370,7 +370,7 @@ a:active, a:hover {
     padding: var(--spacing);
 }
 
-.card:hover {
+.card:hover, .card:focus {
     cursor: pointer;
     box-shadow: 1px 1px var(--spacing-2) var(--spacing) var(--shadow-color);
     transform: scale(1.05);
