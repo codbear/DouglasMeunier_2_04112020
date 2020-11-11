@@ -367,6 +367,12 @@ a:active, a:hover {
     padding: var(--spacing);
 }
 
+.card:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px var(--spacing-2) var(--spacing) var(--shadow-color);
+    transform: scale(1.05);
+}
+
 .card-image {
     width: 100%;
     height: 160px;
