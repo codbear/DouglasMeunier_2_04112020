@@ -263,6 +263,13 @@ a:active, a:hover {
     display: grid;
     grid-auto-columns: 1fr;
     grid-auto-flow: column;
+    gap: var(--spacing-3);
+}
+
+.masonry-column {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: column;
     grid-template-rows: 130px 0 0 0 0 130px;
     gap: var(--spacing-3);
 }
@@ -297,6 +304,10 @@ a:active, a:hover {
 
     .cards-collection-gallery {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .cards-collection-masonry {
+        grid-auto-flow: row;
     }
 
     .cards-collection-list .card {
