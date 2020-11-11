@@ -261,7 +261,7 @@ a:active, a:hover {
 
 .cards-collection-masonry {
     display: grid;
-    grid-auto-columns: auto;
+    grid-auto-columns: 1fr;
     grid-auto-flow: column;
     grid-template-rows: 130px 0 0 0 0 130px;
     gap: var(--spacing-3);
@@ -340,28 +340,20 @@ a:active, a:hover {
     padding: 0;
 }
 
-.cards-collection-masonry .card:nth-child(1) {
-    grid-row: 1 / 7;
+.masonry-full {
+    grid-row: span 6;
 }
 
-.cards-collection-masonry .card:nth-child(2) {
-    grid-row: 1 / 5;
+.masonry-half {
+    grid-row: span 3;
 }
 
-.cards-collection-masonry .card:nth-child(3) {
-    grid-row: 5 / 7;
+.masonry-taller {
+    grid-row: span 4;
 }
 
-.cards-collection-masonry .card:nth-child(4) {
-    grid-row: 1 / 7;
-}
-
-.cards-collection-masonry .card:nth-child(5) {
-    grid-row: 1 / 4;
-}
-
-.cards-collection-masonry .card:nth-child(6) {
-    grid-row: 4 / 7;
+.masonry-smaller {
+    grid-row: span 2;
 }
 
 .card-image {
