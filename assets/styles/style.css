@@ -541,3 +541,32 @@ a:active, a:hover {
 .lodging-rating-5 .rating-star:nth-child(-n+5) {
     color: var(--full-star-color);
 }
+
+/** Footer **/
+#app-footer {
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    padding: var(--spacing-3);
+    gap: var(--spacing-3);
+    background-color: var(--contrast-background-color);
+}
+
+#app-footer nav ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+#app-footer nav ul li {
+    margin: var(--spacing-2) 0;
+}
+
+#app-footer nav ul a {
+    font-weight: normal;
+}
+
+@media (max-width: 576px) {
+    #app-footer {
+        grid-auto-flow: row;
+    }
+}
