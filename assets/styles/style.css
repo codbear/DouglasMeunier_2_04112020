@@ -6,6 +6,7 @@
     --primary-text-color: #000000;
     --secondary-text-color: #FFFFFF;
     --light-border-color: #F2F2F2;
+    --shadow-color: #CACACA;
     --empty-star-color: #F2F2F2;
     --full-star-color: #0065FC;
     --white: #FFFFFF;
@@ -362,6 +363,7 @@ a:active, a:hover {
     width: 100%;
     background-color: var(--main-background-color);
     border-radius: var(--soft-border-radius);
+    box-shadow: 1px 1px var(--spacing-2) var(--shadow-color);
     padding: var(--spacing);
 }
 
