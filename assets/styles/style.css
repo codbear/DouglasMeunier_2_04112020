@@ -50,8 +50,11 @@ a:active, a:hover {
 }
 
 #brand-logo {
+    background: transparent url("../img/Reservia@3x.png") no-repeat;
+    background-size: contain;
     height: 100%;
     margin: 0;
+    text-indent: -30000px;
 }
 
 #login-link {
